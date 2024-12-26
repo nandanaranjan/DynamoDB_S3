@@ -1,0 +1,898 @@
+2024-12-26T13:34:06.352+05:30  INFO 10940 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Starting DynamoDbApplication using Java 21.0.3 with PID 10940 (C:\Assignment_ws\dynamoDb\target\classes started by USER in C:\Assignment_ws\dynamoDb)
+2024-12-26T13:34:06.357+05:30  INFO 10940 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T13:34:07.163+05:30  INFO 10940 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data DynamoDB repositories in DEFAULT mode.
+2024-12-26T13:34:07.233+05:30  INFO 10940 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 DynamoDB repository interface.
+2024-12-26T13:34:08.178+05:30  INFO 10940 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T13:34:08.208+05:30  INFO 10940 --- [dynamoDb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T13:34:08.209+05:30  INFO 10940 --- [dynamoDb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-26T13:34:08.288+05:30  INFO 10940 --- [dynamoDb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T13:34:08.288+05:30  INFO 10940 --- [dynamoDb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1828 ms
+2024-12-26T13:34:08.397+05:30  INFO 10940 --- [dynamoDb] [main] c.credai.dynamoDb.config.DynamoDbConfig  : Initializing Amazon DynamoDb with endpoint: dynamodb.ap-south-1.amazonaws.com, region: ap-south-1
+2024-12-26T13:34:09.158+05:30  INFO 10940 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data DynamoDB Version: 5.0.4 (2.0)
+2024-12-26T13:34:09.159+05:30  INFO 10940 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data Version:          3.4.1
+2024-12-26T13:34:09.159+05:30  INFO 10940 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : AWS SDK Version:              1.12.530
+2024-12-26T13:34:09.160+05:30  INFO 10940 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Java Version:                 21.0.3 - OpenJDK 64-Bit Server VM 21.0.3+9-LTS
+2024-12-26T13:34:09.161+05:30  INFO 10940 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Platform Details:             Windows 11 10.0
+2024-12-26T13:34:09.161+05:30  WARN 10940 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : This Spring Data DynamoDB implementation might not be compatible with the available Spring Data classes on the classpath!
+NoDefClassFoundExceptions or similar might occur!
+2024-12-26T13:34:09.296+05:30  INFO 10940 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing AmazonS3
+2024-12-26T13:34:09.424+05:30  INFO 10940 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing DynamoDBMapper
+2024-12-26T13:34:09.448+05:30  INFO 10940 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing Amazon DynamoDB 
+2024-12-26T13:34:09.638+05:30 DEBUG 10940 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-12-26T13:34:09.746+05:30 DEBUG 10940 --- [dynamoDb] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T13:34:09.790+05:30 DEBUG 10940 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T13:34:09.851+05:30 DEBUG 10940 --- [dynamoDb] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T13:34:10.016+05:30  INFO 10940 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T13:34:10.030+05:30  INFO 10940 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Started DynamoDbApplication in 4.481 seconds (process running for 10.267)
+2024-12-26T13:34:15.672+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T13:34:15.672+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T13:34:15.672+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-26T13:34:15.673+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-26T13:34:15.673+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-26T13:34:15.674+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@e84c99d
+2024-12-26T13:34:15.674+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5aff4b55
+2024-12-26T13:34:15.674+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-26T13:34:15.674+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-26T13:34:15.690+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/customer/upload", parameters={}
+2024-12-26T13:34:15.705+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#saveToS3(Map)
+2024-12-26T13:34:15.734+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{custId=8e6f7421-f7b5-46a7-8e05-deed987e5d3d}]
+2024-12-26T13:34:15.742+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-3] c.c.d.controller.CustomerController      : Received request to save customer data to S3 for custId: 8e6f7421-f7b5-46a7-8e05-deed987e5d3d
+2024-12-26T13:34:15.742+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-3] com.credai.dynamoDb.service.S3Service    : Saving customer with custId: 8e6f7421-f7b5-46a7-8e05-deed987e5d3d
+2024-12-26T13:34:16.988+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-3] com.credai.dynamoDb.service.S3Service    : Customer data with custId: 8e6f7421-f7b5-46a7-8e05-deed987e5d3d already exists in S3. Skipping upload
+2024-12-26T13:34:16.988+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-3] c.c.d.controller.CustomerController      : File successfully saved to S3 for customerId: 8e6f7421-f7b5-46a7-8e05-deed987e5d3d
+2024-12-26T13:34:17.003+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T13:34:17.003+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["File saved to S3 Successfully"]
+2024-12-26T13:34:17.012+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T13:34:24.598+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/customer/upload", parameters={}
+2024-12-26T13:34:24.598+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#saveToS3(Map)
+2024-12-26T13:34:24.607+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{custId=8e6f7421-f7b5-46a7-8e05-deed987e5d3d}]
+2024-12-26T13:34:24.607+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-6] c.c.d.controller.CustomerController      : Received request to save customer data to S3 for custId: 8e6f7421-f7b5-46a7-8e05-deed987e5d3d
+2024-12-26T13:34:24.607+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-6] com.credai.dynamoDb.service.S3Service    : Saving customer with custId: 8e6f7421-f7b5-46a7-8e05-deed987e5d3d
+2024-12-26T13:34:25.084+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-6] com.credai.dynamoDb.service.S3Service    : Customer data with custId: 8e6f7421-f7b5-46a7-8e05-deed987e5d3d already exists in S3. Skipping upload
+2024-12-26T13:34:25.084+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-6] c.c.d.controller.CustomerController      : File successfully saved to S3 for customerId: 8e6f7421-f7b5-46a7-8e05-deed987e5d3d
+2024-12-26T13:34:25.084+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T13:34:25.089+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["File saved to S3 Successfully"]
+2024-12-26T13:34:25.090+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T13:37:03.789+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/customer/create", parameters={}
+2024-12-26T13:37:03.789+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#createCustomer(Customer)
+2024-12-26T13:37:03.806+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Customer(custId=null, firstName=Ananya, lastName=Ravin, dob=18/05/2003, phone=1223567666, email=anan (truncated)...]
+2024-12-26T13:37:03.806+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-5] c.c.d.controller.CustomerController      : Received request to create customer: Customer(custId=null, firstName=Ananya, lastName=Ravin, dob=18/05/2003, phone=1223567666, email=ananya@gmail.com)
+2024-12-26T13:37:03.806+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-5] c.c.dynamoDb.service.CustomerService     : Attempting to create customer with custId: null
+2024-12-26T13:37:04.178+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-5] c.c.dynamoDb.service.CustomerService     : Customer created successfully with ID: bfd7ff17-dd4f-4e67-9452-ef2028f3651e
+2024-12-26T13:37:04.178+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-5] c.c.d.controller.CustomerController      : Customer created successfully: bfd7ff17-dd4f-4e67-9452-ef2028f3651e
+2024-12-26T13:37:04.186+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T13:37:04.186+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Customer created successfully"]
+2024-12-26T13:37:04.186+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T13:37:49.584+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/customer/upload", parameters={}
+2024-12-26T13:37:49.584+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#saveToS3(Map)
+2024-12-26T13:37:49.584+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{custId=bfd7ff17-dd4f-4e67-9452-ef2028f3651e}]
+2024-12-26T13:37:49.591+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-7] c.c.d.controller.CustomerController      : Received request to save customer data to S3 for custId: bfd7ff17-dd4f-4e67-9452-ef2028f3651e
+2024-12-26T13:37:49.592+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-7] com.credai.dynamoDb.service.S3Service    : Saving customer with custId: bfd7ff17-dd4f-4e67-9452-ef2028f3651e
+2024-12-26T13:37:50.393+05:30  WARN 10940 --- [dynamoDb] [http-nio-8080-exec-7] com.amazonaws.util.Base64                : JAXB is unavailable. Will fallback to SDK implementation which may be less performant.If you are using Java 9+, you will need to include javax.xml.bind:jaxb-api as a dependency.
+2024-12-26T13:37:50.393+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-7] com.credai.dynamoDb.service.S3Service    : Successfully uploaded customer data to S3Bucket at: customer/customer_332533424349c2979e8c94f31e41f09b3929c7d1ca5e337110761bf83432779a.json
+2024-12-26T13:37:50.393+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-7] c.c.d.controller.CustomerController      : File successfully saved to S3 for customerId: bfd7ff17-dd4f-4e67-9452-ef2028f3651e
+2024-12-26T13:37:50.393+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T13:37:50.393+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["File saved to S3 Successfully"]
+2024-12-26T13:37:50.393+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T13:46:18.745+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/customer/upload", parameters={}
+2024-12-26T13:46:18.753+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#saveToS3(Map)
+2024-12-26T13:46:18.753+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{custId=}]
+2024-12-26T13:46:18.753+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-10] c.c.d.controller.CustomerController      : Received request to save customer data to S3 for custId: 
+2024-12-26T13:46:18.753+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-10] com.credai.dynamoDb.service.S3Service    : Saving customer with custId: 
+2024-12-26T13:46:18.753+05:30 ERROR 10940 --- [dynamoDb] [http-nio-8080-exec-10] c.c.d.controller.CustomerController      : Error saving file to S3: Customer[custId]; no HASH key value present
+
+com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMappingException: Customer[custId]; no HASH key value present
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperTableModel.convertKey(DynamoDBMapperTableModel.java:329) ~[aws-java-sdk-dynamodb-1.12.530.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperTableModel.convertKey(DynamoDBMapperTableModel.java:310) ~[aws-java-sdk-dynamodb-1.12.530.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper.load(DynamoDBMapper.java:425) ~[aws-java-sdk-dynamodb-1.12.530.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper.load(DynamoDBMapper.java:449) ~[aws-java-sdk-dynamodb-1.12.530.jar:na]
+	at com.amazonaws.services.dynamodbv2.datamodeling.AbstractDynamoDBMapper.load(AbstractDynamoDBMapper.java:80) ~[aws-java-sdk-dynamodb-1.12.530.jar:na]
+	at com.credai.dynamoDb.service.S3Service.saveCustomerToS3(S3Service.java:60) ~[classes/:na]
+	at com.credai.dynamoDb.controller.CustomerController.saveToS3(CustomerController.java:59) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-12-26T13:46:18.761+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T13:46:18.761+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Error saving file to S3: Customer[custId]; no HASH key value present"]
+2024-12-26T13:46:18.769+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-12-26T13:46:29.279+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/customer/upload", parameters={}
+2024-12-26T13:46:29.279+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#saveToS3(Map)
+2024-12-26T13:46:29.279+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{custId=1}]
+2024-12-26T13:46:29.287+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-1] c.c.d.controller.CustomerController      : Received request to save customer data to S3 for custId: 1
+2024-12-26T13:46:29.287+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-1] com.credai.dynamoDb.service.S3Service    : Saving customer with custId: 1
+2024-12-26T13:46:29.762+05:30  WARN 10940 --- [dynamoDb] [http-nio-8080-exec-1] com.credai.dynamoDb.service.S3Service    : Customer with custId: 1 not found in the DynamoDB. Upload to S3 failed
+2024-12-26T13:46:29.762+05:30  INFO 10940 --- [dynamoDb] [http-nio-8080-exec-1] c.c.d.controller.CustomerController      : File successfully saved to S3 for customerId: 1
+2024-12-26T13:46:29.762+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T13:46:29.762+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["File saved to S3 Successfully"]
+2024-12-26T13:46:29.762+05:30 DEBUG 10940 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T13:59:03.346+05:30  INFO 10940 --- [dynamoDb] [RMI TCP Connection(28)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-26T13:59:03.351+05:30  INFO 10940 --- [dynamoDb] [RMI TCP Connection(28)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T13:59:03.359+05:30  INFO 10940 --- [dynamoDb] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T13:59:07.499+05:30  INFO 20924 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Starting DynamoDbApplication using Java 21.0.3 with PID 20924 (C:\Assignment_ws\dynamoDb\target\classes started by USER in C:\Assignment_ws\dynamoDb)
+2024-12-26T13:59:07.502+05:30  INFO 20924 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T13:59:08.180+05:30  INFO 20924 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data DynamoDB repositories in DEFAULT mode.
+2024-12-26T13:59:08.257+05:30  INFO 20924 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 DynamoDB repository interface.
+2024-12-26T13:59:09.152+05:30  INFO 20924 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T13:59:09.179+05:30  INFO 20924 --- [dynamoDb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T13:59:09.180+05:30  INFO 20924 --- [dynamoDb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-26T13:59:09.260+05:30  INFO 20924 --- [dynamoDb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T13:59:09.261+05:30  INFO 20924 --- [dynamoDb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1666 ms
+2024-12-26T13:59:09.364+05:30  INFO 20924 --- [dynamoDb] [main] c.credai.dynamoDb.config.DynamoDbConfig  : Initializing Amazon DynamoDb with endpoint: dynamodb.ap-south-1.amazonaws.com, region: ap-south-1
+2024-12-26T13:59:10.098+05:30  INFO 20924 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data DynamoDB Version: 5.0.4 (2.0)
+2024-12-26T13:59:10.098+05:30  INFO 20924 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data Version:          3.4.1
+2024-12-26T13:59:10.099+05:30  INFO 20924 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : AWS SDK Version:              1.12.530
+2024-12-26T13:59:10.099+05:30  INFO 20924 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Java Version:                 21.0.3 - OpenJDK 64-Bit Server VM 21.0.3+9-LTS
+2024-12-26T13:59:10.100+05:30  INFO 20924 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Platform Details:             Windows 11 10.0
+2024-12-26T13:59:10.100+05:30  WARN 20924 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : This Spring Data DynamoDB implementation might not be compatible with the available Spring Data classes on the classpath!
+NoDefClassFoundExceptions or similar might occur!
+2024-12-26T13:59:10.212+05:30  INFO 20924 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing AmazonS3
+2024-12-26T13:59:10.353+05:30  INFO 20924 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing DynamoDBMapper
+2024-12-26T13:59:10.374+05:30  INFO 20924 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing Amazon DynamoDB 
+2024-12-26T13:59:10.555+05:30 DEBUG 20924 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-12-26T13:59:10.666+05:30 DEBUG 20924 --- [dynamoDb] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T13:59:10.710+05:30 DEBUG 20924 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T13:59:10.771+05:30 DEBUG 20924 --- [dynamoDb] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T13:59:10.893+05:30  INFO 20924 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T13:59:10.906+05:30  INFO 20924 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Started DynamoDbApplication in 4.096 seconds (process running for 5.276)
+2024-12-26T13:59:14.578+05:30  INFO 20924 --- [dynamoDb] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T13:59:14.578+05:30  INFO 20924 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T13:59:14.579+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-26T13:59:14.579+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-26T13:59:14.580+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-26T13:59:14.581+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5d29a2c2
+2024-12-26T13:59:14.582+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7c7c34fa
+2024-12-26T13:59:14.583+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-26T13:59:14.583+05:30  INFO 20924 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-12-26T13:59:14.601+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/customer/upload", parameters={}
+2024-12-26T13:59:14.619+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#saveToS3(Map)
+2024-12-26T13:59:14.661+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{custId=1}]
+2024-12-26T13:59:14.671+05:30  INFO 20924 --- [dynamoDb] [http-nio-8080-exec-2] c.c.d.controller.CustomerController      : Received request to save customer data to S3 for custId: 1
+2024-12-26T13:59:14.672+05:30  INFO 20924 --- [dynamoDb] [http-nio-8080-exec-2] com.credai.dynamoDb.service.S3Service    : Saving customer with custId: 1
+2024-12-26T13:59:15.538+05:30  WARN 20924 --- [dynamoDb] [http-nio-8080-exec-2] com.credai.dynamoDb.service.S3Service    : Customer with custId: 1 not found in the DynamoDB. Upload to S3Bucket failed
+2024-12-26T13:59:15.539+05:30 ERROR 20924 --- [dynamoDb] [http-nio-8080-exec-2] c.c.d.controller.CustomerController      : Error saving file to S3: Customer with custId: 1 not found in DynamoDB.Upload to s3bucket failed
+
+java.lang.RuntimeException: Customer with custId: 1 not found in DynamoDB.Upload to s3bucket failed
+	at com.credai.dynamoDb.service.S3Service.saveCustomerToS3(S3Service.java:64) ~[classes/:na]
+	at com.credai.dynamoDb.controller.CustomerController.saveToS3(CustomerController.java:59) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-12-26T13:59:15.563+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T13:59:15.564+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Error saving file to S3: Customer with custId: 1 not found in DynamoDB.Upload to s3bucket failed"]
+2024-12-26T13:59:15.575+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-12-26T13:59:27.109+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/customer/upload", parameters={}
+2024-12-26T13:59:27.115+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#saveToS3(Map)
+2024-12-26T13:59:27.115+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{custId=bfd7ff17-dd4f-4e67-9452-ef2028f3651e}]
+2024-12-26T13:59:27.115+05:30  INFO 20924 --- [dynamoDb] [http-nio-8080-exec-3] c.c.d.controller.CustomerController      : Received request to save customer data to S3 for custId: bfd7ff17-dd4f-4e67-9452-ef2028f3651e
+2024-12-26T13:59:27.115+05:30  INFO 20924 --- [dynamoDb] [http-nio-8080-exec-3] com.credai.dynamoDb.service.S3Service    : Saving customer with custId: bfd7ff17-dd4f-4e67-9452-ef2028f3651e
+2024-12-26T13:59:27.643+05:30  INFO 20924 --- [dynamoDb] [http-nio-8080-exec-3] com.credai.dynamoDb.service.S3Service    : Customer data with custId: bfd7ff17-dd4f-4e67-9452-ef2028f3651e already exists in S3. Skipping upload
+2024-12-26T13:59:27.643+05:30 ERROR 20924 --- [dynamoDb] [http-nio-8080-exec-3] c.c.d.controller.CustomerController      : Error saving file to S3: Customer data with custId: bfd7ff17-dd4f-4e67-9452-ef2028f3651e already exists in S3Bucket. Skipping upload
+
+java.lang.RuntimeException: Customer data with custId: bfd7ff17-dd4f-4e67-9452-ef2028f3651e already exists in S3Bucket. Skipping upload
+	at com.credai.dynamoDb.service.S3Service.saveCustomerToS3(S3Service.java:75) ~[classes/:na]
+	at com.credai.dynamoDb.controller.CustomerController.saveToS3(CustomerController.java:59) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-12-26T13:59:27.648+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T13:59:27.651+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Error saving file to S3: Customer data with custId: bfd7ff17-dd4f-4e67-9452-ef2028f3651e already exi (truncated)..."]
+2024-12-26T13:59:27.651+05:30 DEBUG 20924 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-12-26T13:59:44.769+05:30  INFO 20924 --- [dynamoDb] [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-26T13:59:44.777+05:30  INFO 20924 --- [dynamoDb] [RMI TCP Connection(4)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T13:59:44.796+05:30  INFO 20924 --- [dynamoDb] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T14:49:03.946+05:30  INFO 15852 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Starting DynamoDbApplication using Java 21.0.3 with PID 15852 (C:\Assignment_ws\dynamoDb\target\classes started by USER in C:\Assignment_ws\dynamoDb)
+2024-12-26T14:49:03.946+05:30  INFO 15852 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T14:49:04.632+05:30  INFO 15852 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data DynamoDB repositories in DEFAULT mode.
+2024-12-26T14:49:04.724+05:30  INFO 15852 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 1 DynamoDB repository interface.
+2024-12-26T14:49:05.617+05:30  INFO 15852 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T14:49:05.641+05:30  INFO 15852 --- [dynamoDb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T14:49:05.643+05:30  INFO 15852 --- [dynamoDb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-26T14:49:05.724+05:30  INFO 15852 --- [dynamoDb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T14:49:05.725+05:30  INFO 15852 --- [dynamoDb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1692 ms
+2024-12-26T14:49:05.841+05:30  INFO 15852 --- [dynamoDb] [main] c.credai.dynamoDb.config.DynamoDbConfig  : Initializing Amazon DynamoDb with endpoint: dynamodb.ap-south-1.amazonaws.com, region: ap-south-1
+2024-12-26T14:49:06.510+05:30  INFO 15852 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data DynamoDB Version: 5.0.4 (2.0)
+2024-12-26T14:49:06.511+05:30  INFO 15852 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data Version:          3.4.1
+2024-12-26T14:49:06.511+05:30  INFO 15852 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : AWS SDK Version:              1.12.530
+2024-12-26T14:49:06.512+05:30  INFO 15852 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Java Version:                 21.0.3 - OpenJDK 64-Bit Server VM 21.0.3+9-LTS
+2024-12-26T14:49:06.512+05:30  INFO 15852 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Platform Details:             Windows 11 10.0
+2024-12-26T14:49:06.512+05:30  WARN 15852 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : This Spring Data DynamoDB implementation might not be compatible with the available Spring Data classes on the classpath!
+NoDefClassFoundExceptions or similar might occur!
+2024-12-26T14:49:06.629+05:30  INFO 15852 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing AmazonS3
+2024-12-26T14:49:06.785+05:30  INFO 15852 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing DynamoDBMapper
+2024-12-26T14:49:06.809+05:30  INFO 15852 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing Amazon DynamoDB 
+2024-12-26T14:49:06.998+05:30 DEBUG 15852 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-12-26T14:49:07.098+05:30 DEBUG 15852 --- [dynamoDb] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T14:49:07.153+05:30 DEBUG 15852 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T14:49:07.215+05:30 DEBUG 15852 --- [dynamoDb] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T14:49:07.351+05:30  INFO 15852 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T14:49:07.365+05:30  INFO 15852 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Started DynamoDbApplication in 4.224 seconds (process running for 5.795)
+2024-12-26T14:49:58.673+05:30  INFO 15852 --- [dynamoDb] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T14:49:58.673+05:30  INFO 15852 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T14:49:58.673+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-26T14:49:58.673+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-26T14:49:58.673+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-26T14:49:58.673+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@457068ff
+2024-12-26T14:49:58.673+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4b80605
+2024-12-26T14:49:58.681+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-26T14:49:58.681+05:30  INFO 15852 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2024-12-26T14:49:58.721+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/customer/create", parameters={}
+2024-12-26T14:49:58.805+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#createCustomer(Customer)
+2024-12-26T14:49:58.930+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Customer(custId=null, firstName=Ravi, lastName=Han, dob=22/09/2003, phone=9923567666, email=ravi@gma (truncated)...]
+2024-12-26T14:49:58.963+05:30  INFO 15852 --- [dynamoDb] [http-nio-8080-exec-1] c.c.d.controller.CustomerController      : Received request to create customer: Customer(custId=null, firstName=Ravi, lastName=Han, dob=22/09/2003, phone=9923567666, email=ravi@gmail.com)
+2024-12-26T14:49:58.963+05:30  INFO 15852 --- [dynamoDb] [http-nio-8080-exec-1] c.c.dynamoDb.service.CustomerService     : Attempting to create customer with custId: null
+2024-12-26T14:50:01.744+05:30  INFO 15852 --- [dynamoDb] [http-nio-8080-exec-1] c.c.dynamoDb.service.CustomerService     : Customer created successfully with ID: 3ab2e6a6-d977-4389-a055-c41fa4e24b28
+2024-12-26T14:50:01.744+05:30  INFO 15852 --- [dynamoDb] [http-nio-8080-exec-1] c.c.d.controller.CustomerController      : Customer created successfully: 3ab2e6a6-d977-4389-a055-c41fa4e24b28
+2024-12-26T14:50:01.776+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T14:50:01.776+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Customer created successfully"]
+2024-12-26T14:50:01.808+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T14:50:30.203+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/customer/upload", parameters={}
+2024-12-26T14:50:30.203+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#saveToS3(Map)
+2024-12-26T14:50:30.212+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{custId=3ab2e6a6-d977-4389-a055-c41fa4e24b28}]
+2024-12-26T14:50:30.212+05:30  INFO 15852 --- [dynamoDb] [http-nio-8080-exec-3] c.c.d.controller.CustomerController      : Received request to save customer data to S3 for custId: 3ab2e6a6-d977-4389-a055-c41fa4e24b28
+2024-12-26T14:50:30.212+05:30  INFO 15852 --- [dynamoDb] [http-nio-8080-exec-3] com.credai.dynamoDb.service.S3Service    : Saving customer with custId: 3ab2e6a6-d977-4389-a055-c41fa4e24b28
+2024-12-26T14:50:32.038+05:30  WARN 15852 --- [dynamoDb] [http-nio-8080-exec-3] com.amazonaws.util.Base64                : JAXB is unavailable. Will fallback to SDK implementation which may be less performant.If you are using Java 9+, you will need to include javax.xml.bind:jaxb-api as a dependency.
+2024-12-26T14:50:32.045+05:30  INFO 15852 --- [dynamoDb] [http-nio-8080-exec-3] com.credai.dynamoDb.service.S3Service    : Successfully uploaded customer data to S3Bucket at: customer/customer_9948354d7e0627d1baecea96dbf613d50103228edf7810d9540ef210b3db105b.json
+2024-12-26T14:50:32.045+05:30  INFO 15852 --- [dynamoDb] [http-nio-8080-exec-3] c.c.d.controller.CustomerController      : File successfully saved to S3 for custId: 3ab2e6a6-d977-4389-a055-c41fa4e24b28
+2024-12-26T14:50:32.049+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T14:50:32.049+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["File saved to S3 Successfully"]
+2024-12-26T14:50:32.049+05:30 DEBUG 15852 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T14:59:44.192+05:30  INFO 15852 --- [dynamoDb] [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-26T14:59:44.197+05:30  INFO 15852 --- [dynamoDb] [RMI TCP Connection(14)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T14:59:44.205+05:30  INFO 15852 --- [dynamoDb] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T15:01:09.363+05:30  INFO 4384 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Starting DynamoDbApplication using Java 21.0.3 with PID 4384 (C:\Assignment_ws\dynamoDb\target\classes started by USER in C:\Assignment_ws\dynamoDb)
+2024-12-26T15:01:09.366+05:30  INFO 4384 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T15:01:10.043+05:30  INFO 4384 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data DynamoDB repositories in DEFAULT mode.
+2024-12-26T15:01:10.096+05:30  INFO 4384 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 DynamoDB repository interface.
+2024-12-26T15:01:10.823+05:30  INFO 4384 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T15:01:10.842+05:30  INFO 4384 --- [dynamoDb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T15:01:10.843+05:30  INFO 4384 --- [dynamoDb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-26T15:01:10.903+05:30  INFO 4384 --- [dynamoDb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T15:01:10.904+05:30  INFO 4384 --- [dynamoDb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1450 ms
+2024-12-26T15:01:10.986+05:30  INFO 4384 --- [dynamoDb] [main] c.credai.dynamoDb.config.DynamoDbConfig  : Initializing Amazon DynamoDb with endpoint: dynamodb.ap-south-1.amazonaws.com, region: ap-south-1
+2024-12-26T15:01:11.495+05:30  INFO 4384 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data DynamoDB Version: 5.0.4 (2.0)
+2024-12-26T15:01:11.495+05:30  INFO 4384 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data Version:          3.4.1
+2024-12-26T15:01:11.495+05:30  INFO 4384 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : AWS SDK Version:              1.12.530
+2024-12-26T15:01:11.495+05:30  INFO 4384 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Java Version:                 21.0.3 - OpenJDK 64-Bit Server VM 21.0.3+9-LTS
+2024-12-26T15:01:11.495+05:30  INFO 4384 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Platform Details:             Windows 11 10.0
+2024-12-26T15:01:11.495+05:30  WARN 4384 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : This Spring Data DynamoDB implementation might not be compatible with the available Spring Data classes on the classpath!
+NoDefClassFoundExceptions or similar might occur!
+2024-12-26T15:01:11.570+05:30  INFO 4384 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing AmazonS3
+2024-12-26T15:01:11.677+05:30  INFO 4384 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing DynamoDBMapper
+2024-12-26T15:01:11.692+05:30  INFO 4384 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing Amazon DynamoDB 
+2024-12-26T15:01:11.825+05:30 DEBUG 4384 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-12-26T15:01:11.889+05:30 DEBUG 4384 --- [dynamoDb] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T15:01:11.926+05:30 DEBUG 4384 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T15:01:11.979+05:30 DEBUG 4384 --- [dynamoDb] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T15:01:12.076+05:30  INFO 4384 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T15:01:12.086+05:30  INFO 4384 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Started DynamoDbApplication in 3.423 seconds (process running for 4.616)
+2024-12-26T15:01:26.359+05:30  INFO 4384 --- [dynamoDb] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T15:01:26.359+05:30  INFO 4384 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T15:01:26.359+05:30 DEBUG 4384 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-26T15:01:26.359+05:30 DEBUG 4384 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-26T15:01:26.359+05:30 DEBUG 4384 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-26T15:01:26.359+05:30 DEBUG 4384 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@43a44406
+2024-12-26T15:01:26.359+05:30 DEBUG 4384 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5d069788
+2024-12-26T15:01:26.359+05:30 DEBUG 4384 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-26T15:01:26.359+05:30  INFO 4384 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-12-26T15:01:26.392+05:30 DEBUG 4384 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/customer/create", parameters={}
+2024-12-26T15:01:26.415+05:30 DEBUG 4384 --- [dynamoDb] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#createCustomer(Customer)
+2024-12-26T15:01:26.488+05:30 DEBUG 4384 --- [dynamoDb] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Customer(custId=null, firstName=Ravi, lastName=, dob=22/09/2003, phone=9923567666, email=ravi@gmail. (truncated)...]
+2024-12-26T15:01:26.504+05:30  INFO 4384 --- [dynamoDb] [http-nio-8080-exec-1] c.c.d.controller.CustomerController      : Received request to create customer: Customer(custId=null, firstName=Ravi, lastName=, dob=22/09/2003, phone=9923567666, email=ravi@gmail.com)
+2024-12-26T15:01:26.504+05:30  INFO 4384 --- [dynamoDb] [http-nio-8080-exec-1] c.c.dynamoDb.service.CustomerService     : Attempting to create customer with custId: null
+2024-12-26T15:01:28.277+05:30  INFO 4384 --- [dynamoDb] [http-nio-8080-exec-1] c.c.dynamoDb.service.CustomerService     : Customer created successfully with ID: b1c53047-28b7-4e70-b033-0db10bd4aa0f
+2024-12-26T15:01:28.277+05:30  INFO 4384 --- [dynamoDb] [http-nio-8080-exec-1] c.c.d.controller.CustomerController      : Customer created successfully: b1c53047-28b7-4e70-b033-0db10bd4aa0f
+2024-12-26T15:01:28.301+05:30 DEBUG 4384 --- [dynamoDb] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T15:01:28.301+05:30 DEBUG 4384 --- [dynamoDb] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Customer created successfully"]
+2024-12-26T15:01:28.317+05:30 DEBUG 4384 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:05:23.185+05:30  INFO 4384 --- [dynamoDb] [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-26T15:05:23.191+05:30  INFO 4384 --- [dynamoDb] [RMI TCP Connection(6)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T15:05:23.200+05:30  INFO 4384 --- [dynamoDb] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T15:05:26.270+05:30  INFO 36660 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Starting DynamoDbApplication using Java 21.0.3 with PID 36660 (C:\Assignment_ws\dynamoDb\target\classes started by USER in C:\Assignment_ws\dynamoDb)
+2024-12-26T15:05:26.274+05:30  INFO 36660 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T15:05:26.966+05:30  INFO 36660 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data DynamoDB repositories in DEFAULT mode.
+2024-12-26T15:05:27.037+05:30  INFO 36660 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 1 DynamoDB repository interface.
+2024-12-26T15:05:27.942+05:30  INFO 36660 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T15:05:27.967+05:30  INFO 36660 --- [dynamoDb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T15:05:27.968+05:30  INFO 36660 --- [dynamoDb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-26T15:05:28.048+05:30  INFO 36660 --- [dynamoDb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T15:05:28.049+05:30  INFO 36660 --- [dynamoDb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1677 ms
+2024-12-26T15:05:28.166+05:30  INFO 36660 --- [dynamoDb] [main] c.credai.dynamoDb.config.DynamoDbConfig  : Initializing Amazon DynamoDb with endpoint: dynamodb.ap-south-1.amazonaws.com, region: ap-south-1
+2024-12-26T15:05:28.852+05:30  INFO 36660 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data DynamoDB Version: 5.0.4 (2.0)
+2024-12-26T15:05:28.853+05:30  INFO 36660 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data Version:          3.4.1
+2024-12-26T15:05:28.854+05:30  INFO 36660 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : AWS SDK Version:              1.12.530
+2024-12-26T15:05:28.854+05:30  INFO 36660 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Java Version:                 21.0.3 - OpenJDK 64-Bit Server VM 21.0.3+9-LTS
+2024-12-26T15:05:28.855+05:30  INFO 36660 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Platform Details:             Windows 11 10.0
+2024-12-26T15:05:28.855+05:30  WARN 36660 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : This Spring Data DynamoDB implementation might not be compatible with the available Spring Data classes on the classpath!
+NoDefClassFoundExceptions or similar might occur!
+2024-12-26T15:05:28.989+05:30  INFO 36660 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing AmazonS3
+2024-12-26T15:05:29.138+05:30  INFO 36660 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing DynamoDBMapper
+2024-12-26T15:05:29.160+05:30  INFO 36660 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing Amazon DynamoDB 
+2024-12-26T15:05:29.374+05:30 DEBUG 36660 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-12-26T15:05:29.470+05:30 DEBUG 36660 --- [dynamoDb] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T15:05:29.513+05:30 DEBUG 36660 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T15:05:29.607+05:30 DEBUG 36660 --- [dynamoDb] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T15:05:29.766+05:30  INFO 36660 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T15:05:29.784+05:30  INFO 36660 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Started DynamoDbApplication in 4.241 seconds (process running for 5.425)
+2024-12-26T15:05:32.600+05:30  INFO 36660 --- [dynamoDb] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T15:05:32.601+05:30  INFO 36660 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T15:05:32.601+05:30 DEBUG 36660 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-26T15:05:32.602+05:30 DEBUG 36660 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-26T15:05:32.603+05:30 DEBUG 36660 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-26T15:05:32.605+05:30 DEBUG 36660 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@702af66c
+2024-12-26T15:05:32.605+05:30 DEBUG 36660 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@d36ce05
+2024-12-26T15:05:32.606+05:30 DEBUG 36660 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-26T15:05:32.606+05:30  INFO 36660 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-12-26T15:05:32.615+05:30 DEBUG 36660 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/customer/create", parameters={}
+2024-12-26T15:05:32.624+05:30 DEBUG 36660 --- [dynamoDb] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#createCustomer(Customer)
+2024-12-26T15:05:32.657+05:30 DEBUG 36660 --- [dynamoDb] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Customer(custId=null, firstName=Ravi, lastName=, dob=22/09/2003, phone=9923567666, email=ravi@gmail. (truncated)...]
+2024-12-26T15:05:32.688+05:30  INFO 36660 --- [dynamoDb] [http-nio-8080-exec-2] c.c.d.controller.CustomerController      : Received request to create customer: Customer(custId=null, firstName=Ravi, lastName=, dob=22/09/2003, phone=9923567666, email=ravi@gmail.com)
+2024-12-26T15:05:32.689+05:30  INFO 36660 --- [dynamoDb] [http-nio-8080-exec-2] c.c.dynamoDb.service.CustomerService     : Attempting to create customer with custId: null
+2024-12-26T15:05:35.244+05:30  INFO 36660 --- [dynamoDb] [http-nio-8080-exec-2] c.c.dynamoDb.service.CustomerService     : Customer created successfully with ID: 4a7eceff-f492-47eb-92d0-96570276d12b
+2024-12-26T15:05:35.245+05:30  INFO 36660 --- [dynamoDb] [http-nio-8080-exec-2] c.c.d.controller.CustomerController      : Customer created successfully: 4a7eceff-f492-47eb-92d0-96570276d12b
+2024-12-26T15:05:35.263+05:30 DEBUG 36660 --- [dynamoDb] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T15:05:35.265+05:30 DEBUG 36660 --- [dynamoDb] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Customer created successfully"]
+2024-12-26T15:05:35.274+05:30 DEBUG 36660 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:11:18.801+05:30  INFO 36660 --- [dynamoDb] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-26T15:11:18.806+05:30  INFO 36660 --- [dynamoDb] [RMI TCP Connection(10)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T15:11:18.813+05:30  INFO 36660 --- [dynamoDb] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T15:11:23.751+05:30  INFO 888 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Starting DynamoDbApplication using Java 21.0.3 with PID 888 (C:\Assignment_ws\dynamoDb\target\classes started by USER in C:\Assignment_ws\dynamoDb)
+2024-12-26T15:11:23.755+05:30  INFO 888 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T15:11:24.517+05:30  INFO 888 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data DynamoDB repositories in DEFAULT mode.
+2024-12-26T15:11:24.590+05:30  INFO 888 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 DynamoDB repository interface.
+2024-12-26T15:11:25.444+05:30  INFO 888 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T15:11:25.469+05:30  INFO 888 --- [dynamoDb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T15:11:25.470+05:30  INFO 888 --- [dynamoDb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-26T15:11:25.552+05:30  INFO 888 --- [dynamoDb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T15:11:25.553+05:30  INFO 888 --- [dynamoDb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1713 ms
+2024-12-26T15:11:25.662+05:30  INFO 888 --- [dynamoDb] [main] c.credai.dynamoDb.config.DynamoDbConfig  : Initializing Amazon DynamoDb with endpoint: dynamodb.ap-south-1.amazonaws.com, region: ap-south-1
+2024-12-26T15:11:26.261+05:30  INFO 888 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data DynamoDB Version: 5.0.4 (2.0)
+2024-12-26T15:11:26.261+05:30  INFO 888 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data Version:          3.4.1
+2024-12-26T15:11:26.262+05:30  INFO 888 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : AWS SDK Version:              1.12.530
+2024-12-26T15:11:26.262+05:30  INFO 888 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Java Version:                 21.0.3 - OpenJDK 64-Bit Server VM 21.0.3+9-LTS
+2024-12-26T15:11:26.262+05:30  INFO 888 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Platform Details:             Windows 11 10.0
+2024-12-26T15:11:26.262+05:30  WARN 888 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : This Spring Data DynamoDB implementation might not be compatible with the available Spring Data classes on the classpath!
+NoDefClassFoundExceptions or similar might occur!
+2024-12-26T15:11:26.375+05:30  INFO 888 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing AmazonS3
+2024-12-26T15:11:26.527+05:30  INFO 888 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing DynamoDBMapper
+2024-12-26T15:11:26.546+05:30  INFO 888 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing Amazon DynamoDB 
+2024-12-26T15:11:26.743+05:30 DEBUG 888 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-12-26T15:11:26.845+05:30 DEBUG 888 --- [dynamoDb] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T15:11:26.885+05:30 DEBUG 888 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T15:11:26.951+05:30 DEBUG 888 --- [dynamoDb] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T15:11:27.104+05:30  INFO 888 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T15:11:27.117+05:30  INFO 888 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Started DynamoDbApplication in 4.089 seconds (process running for 5.247)
+2024-12-26T15:11:37.802+05:30  INFO 888 --- [dynamoDb] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T15:11:37.803+05:30  INFO 888 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T15:11:37.803+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-26T15:11:37.803+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-26T15:11:37.803+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-26T15:11:37.804+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6fe92f30
+2024-12-26T15:11:37.804+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@166f96c3
+2024-12-26T15:11:37.804+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-26T15:11:37.805+05:30  INFO 888 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-12-26T15:11:37.819+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/customer/create", parameters={}
+2024-12-26T15:11:37.832+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#createCustomer(Customer)
+2024-12-26T15:11:37.870+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Customer(custId=null, firstName=Ravi, lastName=, dob=22/09/2003, phone=9923567666, email=ravi@gmail. (truncated)...]
+2024-12-26T15:11:37.986+05:30  WARN 888 --- [dynamoDb] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.String> com.credai.dynamoDb.controller.CustomerController.createCustomer(com.credai.dynamoDb.entity.Customer): [Field error in object 'customer' on field 'lastName': rejected value []; codes [NotBlank.customer.lastName,NotBlank.lastName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [customer.lastName,lastName]; arguments []; default message [lastName]]; default message [LastName cannot be blank]] ]
+2024-12-26T15:11:37.987+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2024-12-26T15:11:38.000+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2024-12-26T15:11:38.002+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-26T15:11:38.021+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/cbor]
+2024-12-26T15:11:38.024+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 26 15:11:38 IST 2024, status=400, error=Bad Request, path=/customer/create}]
+2024-12-26T15:11:38.051+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2024-12-26T15:11:57.583+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/customer/create", parameters={}
+2024-12-26T15:11:57.583+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#createCustomer(Customer)
+2024-12-26T15:11:57.583+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Customer(custId=null, firstName=Ravi, lastName=d, dob=22/09/2003, phone=9923567666, email=ravi@gmail (truncated)...]
+2024-12-26T15:11:57.583+05:30  INFO 888 --- [dynamoDb] [http-nio-8080-exec-4] c.c.d.controller.CustomerController      : Received request to create customer: Customer(custId=null, firstName=Ravi, lastName=d, dob=22/09/2003, phone=9923567666, email=ravi@gmail.com)
+2024-12-26T15:11:57.583+05:30  INFO 888 --- [dynamoDb] [http-nio-8080-exec-4] c.c.dynamoDb.service.CustomerService     : Attempting to create customer with custId: null
+2024-12-26T15:11:59.593+05:30  INFO 888 --- [dynamoDb] [http-nio-8080-exec-4] c.c.dynamoDb.service.CustomerService     : Customer created successfully with ID: 02dae5e9-15c8-4b71-9c81-b3b7365db1ce
+2024-12-26T15:11:59.593+05:30  INFO 888 --- [dynamoDb] [http-nio-8080-exec-4] c.c.d.controller.CustomerController      : Customer created successfully: 02dae5e9-15c8-4b71-9c81-b3b7365db1ce
+2024-12-26T15:11:59.593+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T15:11:59.593+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Customer created successfully"]
+2024-12-26T15:11:59.601+05:30 DEBUG 888 --- [dynamoDb] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:13:22.901+05:30  INFO 888 --- [dynamoDb] [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-26T15:13:22.906+05:30  INFO 888 --- [dynamoDb] [RMI TCP Connection(5)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T15:13:22.915+05:30  INFO 888 --- [dynamoDb] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T15:13:25.859+05:30  INFO 35472 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Starting DynamoDbApplication using Java 21.0.3 with PID 35472 (C:\Assignment_ws\dynamoDb\target\classes started by USER in C:\Assignment_ws\dynamoDb)
+2024-12-26T15:13:25.862+05:30  INFO 35472 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T15:13:26.365+05:30  INFO 35472 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data DynamoDB repositories in DEFAULT mode.
+2024-12-26T15:13:26.417+05:30  INFO 35472 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 DynamoDB repository interface.
+2024-12-26T15:13:27.153+05:30  INFO 35472 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T15:13:27.169+05:30  INFO 35472 --- [dynamoDb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T15:13:27.170+05:30  INFO 35472 --- [dynamoDb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-26T15:13:27.228+05:30  INFO 35472 --- [dynamoDb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T15:13:27.228+05:30  INFO 35472 --- [dynamoDb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1298 ms
+2024-12-26T15:13:27.308+05:30  INFO 35472 --- [dynamoDb] [main] c.credai.dynamoDb.config.DynamoDbConfig  : Initializing Amazon DynamoDb with endpoint: dynamodb.ap-south-1.amazonaws.com, region: ap-south-1
+2024-12-26T15:13:27.821+05:30  INFO 35472 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data DynamoDB Version: 5.0.4 (2.0)
+2024-12-26T15:13:27.821+05:30  INFO 35472 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data Version:          3.4.1
+2024-12-26T15:13:27.822+05:30  INFO 35472 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : AWS SDK Version:              1.12.530
+2024-12-26T15:13:27.822+05:30  INFO 35472 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Java Version:                 21.0.3 - OpenJDK 64-Bit Server VM 21.0.3+9-LTS
+2024-12-26T15:13:27.822+05:30  INFO 35472 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Platform Details:             Windows 11 10.0
+2024-12-26T15:13:27.822+05:30  WARN 35472 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : This Spring Data DynamoDB implementation might not be compatible with the available Spring Data classes on the classpath!
+NoDefClassFoundExceptions or similar might occur!
+2024-12-26T15:13:27.922+05:30  INFO 35472 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing AmazonS3
+2024-12-26T15:13:28.034+05:30  INFO 35472 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing DynamoDBMapper
+2024-12-26T15:13:28.055+05:30  INFO 35472 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing Amazon DynamoDB 
+2024-12-26T15:13:28.207+05:30 DEBUG 35472 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-12-26T15:13:28.290+05:30 DEBUG 35472 --- [dynamoDb] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T15:13:28.324+05:30 DEBUG 35472 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T15:13:28.371+05:30 DEBUG 35472 --- [dynamoDb] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T15:13:28.482+05:30  INFO 35472 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T15:13:28.493+05:30  INFO 35472 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Started DynamoDbApplication in 3.205 seconds (process running for 4.112)
+2024-12-26T15:14:12.329+05:30  INFO 35472 --- [dynamoDb] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T15:14:12.330+05:30  INFO 35472 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T15:14:12.331+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-26T15:14:12.331+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-26T15:14:12.331+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-26T15:14:12.333+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@320e6b03
+2024-12-26T15:14:12.334+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4977dd41
+2024-12-26T15:14:12.334+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-26T15:14:12.335+05:30  INFO 35472 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-12-26T15:14:12.352+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/customer/create", parameters={}
+2024-12-26T15:14:12.373+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#createCustomer(Customer)
+2024-12-26T15:14:12.430+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Customer(custId=null, firstName=Ravi, lastName=d, dob=22/09/2003, phone=9923567666, email=ravi@gmail (truncated)...]
+2024-12-26T15:14:12.446+05:30  INFO 35472 --- [dynamoDb] [http-nio-8080-exec-1] c.c.d.controller.CustomerController      : Received request to create customer: Customer(custId=null, firstName=Ravi, lastName=d, dob=22/09/2003, phone=9923567666, email=ravi@gmail.com)
+2024-12-26T15:14:12.447+05:30  INFO 35472 --- [dynamoDb] [http-nio-8080-exec-1] c.c.dynamoDb.service.CustomerService     : Attempting to create customer with custId: null
+2024-12-26T15:14:14.269+05:30  INFO 35472 --- [dynamoDb] [http-nio-8080-exec-1] c.c.dynamoDb.service.CustomerService     : Customer created successfully with ID: 23fb537e-60d8-4ce3-9387-b60cfe246931
+2024-12-26T15:14:14.270+05:30  INFO 35472 --- [dynamoDb] [http-nio-8080-exec-1] c.c.d.controller.CustomerController      : Customer created successfully: 23fb537e-60d8-4ce3-9387-b60cfe246931
+2024-12-26T15:14:14.294+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T15:14:14.296+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Customer created successfully"]
+2024-12-26T15:14:14.307+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:14:20.170+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/customer/create", parameters={}
+2024-12-26T15:14:20.170+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#createCustomer(Customer)
+2024-12-26T15:14:20.176+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Customer(custId=null, firstName=Ravi, lastName=, dob=22/09/2003, phone=9923567666, email=ravi@gmail. (truncated)...]
+2024-12-26T15:14:20.176+05:30  INFO 35472 --- [dynamoDb] [http-nio-8080-exec-3] c.c.d.controller.CustomerController      : Received request to create customer: Customer(custId=null, firstName=Ravi, lastName=, dob=22/09/2003, phone=9923567666, email=ravi@gmail.com)
+2024-12-26T15:14:20.179+05:30  INFO 35472 --- [dynamoDb] [http-nio-8080-exec-3] c.c.dynamoDb.service.CustomerService     : Attempting to create customer with custId: null
+2024-12-26T15:14:20.521+05:30  INFO 35472 --- [dynamoDb] [http-nio-8080-exec-3] c.c.dynamoDb.service.CustomerService     : Customer created successfully with ID: 8e0f791a-c564-4dc6-883e-14b541526a58
+2024-12-26T15:14:20.521+05:30  INFO 35472 --- [dynamoDb] [http-nio-8080-exec-3] c.c.d.controller.CustomerController      : Customer created successfully: 8e0f791a-c564-4dc6-883e-14b541526a58
+2024-12-26T15:14:20.521+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T15:14:20.528+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Customer created successfully"]
+2024-12-26T15:14:20.529+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:14:22.108+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/customer/create", parameters={}
+2024-12-26T15:14:22.108+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#createCustomer(Customer)
+2024-12-26T15:14:22.108+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Customer(custId=null, firstName=Ravi, lastName=, dob=22/09/2003, phone=9923567666, email=ravi@gmail. (truncated)...]
+2024-12-26T15:14:22.108+05:30  INFO 35472 --- [dynamoDb] [http-nio-8080-exec-5] c.c.d.controller.CustomerController      : Received request to create customer: Customer(custId=null, firstName=Ravi, lastName=, dob=22/09/2003, phone=9923567666, email=ravi@gmail.com)
+2024-12-26T15:14:22.108+05:30  INFO 35472 --- [dynamoDb] [http-nio-8080-exec-5] c.c.dynamoDb.service.CustomerService     : Attempting to create customer with custId: null
+2024-12-26T15:14:22.387+05:30  INFO 35472 --- [dynamoDb] [http-nio-8080-exec-5] c.c.dynamoDb.service.CustomerService     : Customer created successfully with ID: 641ab800-88c2-4d32-9e80-cdf26eff2d5d
+2024-12-26T15:14:22.389+05:30  INFO 35472 --- [dynamoDb] [http-nio-8080-exec-5] c.c.d.controller.CustomerController      : Customer created successfully: 641ab800-88c2-4d32-9e80-cdf26eff2d5d
+2024-12-26T15:14:22.390+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T15:14:22.390+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Customer created successfully"]
+2024-12-26T15:14:22.390+05:30 DEBUG 35472 --- [dynamoDb] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:15:28.088+05:30  INFO 35472 --- [dynamoDb] [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-26T15:15:28.093+05:30  INFO 35472 --- [dynamoDb] [RMI TCP Connection(4)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T15:15:28.100+05:30  INFO 35472 --- [dynamoDb] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T15:15:32.071+05:30  INFO 12000 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Starting DynamoDbApplication using Java 21.0.3 with PID 12000 (C:\Assignment_ws\dynamoDb\target\classes started by USER in C:\Assignment_ws\dynamoDb)
+2024-12-26T15:15:32.074+05:30  INFO 12000 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T15:15:32.710+05:30  INFO 12000 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data DynamoDB repositories in DEFAULT mode.
+2024-12-26T15:15:32.774+05:30  INFO 12000 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 DynamoDB repository interface.
+2024-12-26T15:15:33.599+05:30  INFO 12000 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T15:15:33.620+05:30  INFO 12000 --- [dynamoDb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T15:15:33.620+05:30  INFO 12000 --- [dynamoDb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-26T15:15:33.692+05:30  INFO 12000 --- [dynamoDb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T15:15:33.693+05:30  INFO 12000 --- [dynamoDb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1521 ms
+2024-12-26T15:15:33.792+05:30  INFO 12000 --- [dynamoDb] [main] c.credai.dynamoDb.config.DynamoDbConfig  : Initializing Amazon DynamoDb with endpoint: dynamodb.ap-south-1.amazonaws.com, region: ap-south-1
+2024-12-26T15:15:34.424+05:30  INFO 12000 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data DynamoDB Version: 5.0.4 (2.0)
+2024-12-26T15:15:34.424+05:30  INFO 12000 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data Version:          3.4.1
+2024-12-26T15:15:34.425+05:30  INFO 12000 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : AWS SDK Version:              1.12.530
+2024-12-26T15:15:34.425+05:30  INFO 12000 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Java Version:                 21.0.3 - OpenJDK 64-Bit Server VM 21.0.3+9-LTS
+2024-12-26T15:15:34.425+05:30  INFO 12000 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Platform Details:             Windows 11 10.0
+2024-12-26T15:15:34.425+05:30  WARN 12000 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : This Spring Data DynamoDB implementation might not be compatible with the available Spring Data classes on the classpath!
+NoDefClassFoundExceptions or similar might occur!
+2024-12-26T15:15:34.574+05:30  INFO 12000 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing AmazonS3
+2024-12-26T15:15:34.726+05:30  INFO 12000 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing DynamoDBMapper
+2024-12-26T15:15:34.747+05:30  INFO 12000 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing Amazon DynamoDB 
+2024-12-26T15:15:34.924+05:30 DEBUG 12000 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-12-26T15:15:35.012+05:30 DEBUG 12000 --- [dynamoDb] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T15:15:35.066+05:30 DEBUG 12000 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T15:15:35.140+05:30 DEBUG 12000 --- [dynamoDb] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T15:15:35.286+05:30  INFO 12000 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T15:15:35.297+05:30  INFO 12000 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Started DynamoDbApplication in 3.917 seconds (process running for 5.488)
+2024-12-26T15:16:01.185+05:30  INFO 12000 --- [dynamoDb] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T15:16:01.185+05:30  INFO 12000 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T15:16:01.185+05:30 DEBUG 12000 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-26T15:16:01.185+05:30 DEBUG 12000 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-26T15:16:01.185+05:30 DEBUG 12000 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-26T15:16:01.187+05:30 DEBUG 12000 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@df7d50d
+2024-12-26T15:16:01.188+05:30 DEBUG 12000 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@326618d7
+2024-12-26T15:16:01.188+05:30 DEBUG 12000 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-26T15:16:01.188+05:30  INFO 12000 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-12-26T15:16:01.205+05:30 DEBUG 12000 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/customer/create", parameters={}
+2024-12-26T15:16:01.219+05:30 DEBUG 12000 --- [dynamoDb] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#createCustomer(Customer)
+2024-12-26T15:16:01.250+05:30 DEBUG 12000 --- [dynamoDb] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Customer(custId=null, firstName=Ravi, lastName=, dob=22/09/2003, phone=9923567666, email=ravi@gmail. (truncated)...]
+2024-12-26T15:16:01.322+05:30  WARN 12000 --- [dynamoDb] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.String> com.credai.dynamoDb.controller.CustomerController.createCustomer(com.credai.dynamoDb.entity.Customer): [Field error in object 'customer' on field 'lastName': rejected value []; codes [NotBlank.customer.lastName,NotBlank.lastName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [customer.lastName,lastName]; arguments []; default message [lastName]]; default message [LastName cannot be blank]] ]
+2024-12-26T15:16:01.323+05:30 DEBUG 12000 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2024-12-26T15:16:01.329+05:30 DEBUG 12000 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2024-12-26T15:16:01.331+05:30 DEBUG 12000 --- [dynamoDb] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-26T15:16:01.344+05:30 DEBUG 12000 --- [dynamoDb] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/cbor]
+2024-12-26T15:16:01.346+05:30 DEBUG 12000 --- [dynamoDb] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Dec 26 15:16:01 IST 2024, status=400, error=Bad Request, path=/customer/create}]
+2024-12-26T15:16:01.369+05:30 DEBUG 12000 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2024-12-26T15:17:59.017+05:30  INFO 12000 --- [dynamoDb] [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-26T15:17:59.020+05:30  INFO 12000 --- [dynamoDb] [RMI TCP Connection(4)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T15:17:59.031+05:30  INFO 12000 --- [dynamoDb] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T15:18:02.135+05:30  INFO 11788 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Starting DynamoDbApplication using Java 21.0.3 with PID 11788 (C:\Assignment_ws\dynamoDb\target\classes started by USER in C:\Assignment_ws\dynamoDb)
+2024-12-26T15:18:02.138+05:30  INFO 11788 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T15:18:02.792+05:30  INFO 11788 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data DynamoDB repositories in DEFAULT mode.
+2024-12-26T15:18:02.866+05:30  INFO 11788 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 DynamoDB repository interface.
+2024-12-26T15:18:03.701+05:30  INFO 11788 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T15:18:03.726+05:30  INFO 11788 --- [dynamoDb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T15:18:03.727+05:30  INFO 11788 --- [dynamoDb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-26T15:18:03.808+05:30  INFO 11788 --- [dynamoDb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T15:18:03.809+05:30  INFO 11788 --- [dynamoDb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1585 ms
+2024-12-26T15:18:03.919+05:30  INFO 11788 --- [dynamoDb] [main] c.credai.dynamoDb.config.DynamoDbConfig  : Initializing Amazon DynamoDb with endpoint: dynamodb.ap-south-1.amazonaws.com, region: ap-south-1
+2024-12-26T15:18:04.556+05:30  INFO 11788 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data DynamoDB Version: 5.0.4 (2.0)
+2024-12-26T15:18:04.557+05:30  INFO 11788 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data Version:          3.4.1
+2024-12-26T15:18:04.557+05:30  INFO 11788 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : AWS SDK Version:              1.12.530
+2024-12-26T15:18:04.557+05:30  INFO 11788 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Java Version:                 21.0.3 - OpenJDK 64-Bit Server VM 21.0.3+9-LTS
+2024-12-26T15:18:04.557+05:30  INFO 11788 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Platform Details:             Windows 11 10.0
+2024-12-26T15:18:04.557+05:30  WARN 11788 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : This Spring Data DynamoDB implementation might not be compatible with the available Spring Data classes on the classpath!
+NoDefClassFoundExceptions or similar might occur!
+2024-12-26T15:18:04.672+05:30  INFO 11788 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing AmazonS3
+2024-12-26T15:18:04.818+05:30  INFO 11788 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing DynamoDBMapper
+2024-12-26T15:18:04.851+05:30  INFO 11788 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing Amazon DynamoDB 
+2024-12-26T15:18:05.056+05:30 DEBUG 11788 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-12-26T15:18:05.204+05:30 DEBUG 11788 --- [dynamoDb] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T15:18:05.255+05:30 DEBUG 11788 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T15:18:05.318+05:30 DEBUG 11788 --- [dynamoDb] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T15:18:05.472+05:30  INFO 11788 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T15:18:05.489+05:30  INFO 11788 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Started DynamoDbApplication in 3.998 seconds (process running for 5.12)
+2024-12-26T15:18:11.090+05:30  INFO 11788 --- [dynamoDb] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T15:18:11.091+05:30  INFO 11788 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T15:18:11.091+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-26T15:18:11.092+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-26T15:18:11.093+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-26T15:18:11.094+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4cb35e5c
+2024-12-26T15:18:11.095+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6e886078
+2024-12-26T15:18:11.096+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-26T15:18:11.096+05:30  INFO 11788 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-12-26T15:18:11.105+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/customer/create", parameters={}
+2024-12-26T15:18:11.116+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#createCustomer(Customer)
+2024-12-26T15:18:11.154+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Customer(custId=null, firstName=Ravi, lastName=, dob=22/09/2003, phone=9923567666, email=ravi@gmail. (truncated)...]
+2024-12-26T15:18:11.230+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.credai.dynamoDb.Exception.GlobalExceptionHandler#handleValidationExceptions(MethodArgumentNotValidException)
+2024-12-26T15:18:11.239+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T15:18:11.240+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["lastName: LastName cannot be blank"]
+2024-12-26T15:18:11.246+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.String> com.credai.dynamoDb.controller.CustomerController.createCustomer(com.credai.dynamoDb.entity.Customer): [Field error in object 'customer' on field 'lastName': rejected value []; codes [NotBlank.customer.lastName,NotBlank.lastName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [customer.lastName,lastName]; arguments []; default message [lastName]]; default message [LastName cannot be blank]] ]
+2024-12-26T15:18:11.248+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2024-12-26T15:18:33.505+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/customer/create", parameters={}
+2024-12-26T15:18:33.505+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#createCustomer(Customer)
+2024-12-26T15:18:33.514+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Customer(custId=null, firstName=Ravi, lastName=ann, dob=22/09/2003, phone=9923567666, email=ravi@gma (truncated)...]
+2024-12-26T15:18:33.515+05:30  INFO 11788 --- [dynamoDb] [http-nio-8080-exec-4] c.c.d.controller.CustomerController      : Received request to create customer: Customer(custId=null, firstName=Ravi, lastName=ann, dob=22/09/2003, phone=9923567666, email=ravi@gmail.com)
+2024-12-26T15:18:33.515+05:30  INFO 11788 --- [dynamoDb] [http-nio-8080-exec-4] c.c.dynamoDb.service.CustomerService     : Attempting to create customer with custId: null
+2024-12-26T15:18:35.356+05:30  INFO 11788 --- [dynamoDb] [http-nio-8080-exec-4] c.c.dynamoDb.service.CustomerService     : Customer created successfully with ID: f80fe0f5-c9cb-4c05-b29a-e74c0bcbee63
+2024-12-26T15:18:35.356+05:30  INFO 11788 --- [dynamoDb] [http-nio-8080-exec-4] c.c.d.controller.CustomerController      : Customer created successfully: f80fe0f5-c9cb-4c05-b29a-e74c0bcbee63
+2024-12-26T15:18:35.363+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T15:18:35.363+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Customer created successfully"]
+2024-12-26T15:18:35.366+05:30 DEBUG 11788 --- [dynamoDb] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T15:26:04.422+05:30  INFO 11788 --- [dynamoDb] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-26T15:26:04.427+05:30  INFO 11788 --- [dynamoDb] [RMI TCP Connection(10)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T15:26:04.438+05:30  INFO 11788 --- [dynamoDb] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-26T17:20:12.561+05:30  INFO 32476 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Starting DynamoDbApplication using Java 21.0.3 with PID 32476 (C:\Assignment_ws\dynamoDb\target\classes started by USER in C:\Assignment_ws\dynamoDb)
+2024-12-26T17:20:12.564+05:30  INFO 32476 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-26T17:20:13.027+05:30  INFO 32476 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data DynamoDB repositories in DEFAULT mode.
+2024-12-26T17:20:13.078+05:30  INFO 32476 --- [dynamoDb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 DynamoDB repository interface.
+2024-12-26T17:20:13.728+05:30  INFO 32476 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-26T17:20:13.751+05:30  INFO 32476 --- [dynamoDb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-26T17:20:13.752+05:30  INFO 32476 --- [dynamoDb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-26T17:20:13.814+05:30  INFO 32476 --- [dynamoDb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-26T17:20:13.814+05:30  INFO 32476 --- [dynamoDb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1185 ms
+2024-12-26T17:20:13.883+05:30  INFO 32476 --- [dynamoDb] [main] c.credai.dynamoDb.config.DynamoDbConfig  : Initializing Amazon DynamoDb with endpoint: dynamodb.ap-south-1.amazonaws.com, region: ap-south-1
+2024-12-26T17:20:14.433+05:30  INFO 32476 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data DynamoDB Version: 5.0.4 (2.0)
+2024-12-26T17:20:14.434+05:30  INFO 32476 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Spring Data Version:          3.4.1
+2024-12-26T17:20:14.434+05:30  INFO 32476 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : AWS SDK Version:              1.12.530
+2024-12-26T17:20:14.434+05:30  INFO 32476 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Java Version:                 21.0.3 - OpenJDK 64-Bit Server VM 21.0.3+9-LTS
+2024-12-26T17:20:14.435+05:30  INFO 32476 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : Platform Details:             Windows 11 10.0
+2024-12-26T17:20:14.435+05:30  WARN 32476 --- [dynamoDb] [main] o.s.s.d.d.r.s.DynamoDBRepositoryFactory  : This Spring Data DynamoDB implementation might not be compatible with the available Spring Data classes on the classpath!
+NoDefClassFoundExceptions or similar might occur!
+2024-12-26T17:20:14.536+05:30  INFO 32476 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing AmazonS3
+2024-12-26T17:20:14.641+05:30  INFO 32476 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing DynamoDBMapper
+2024-12-26T17:20:14.666+05:30  INFO 32476 --- [dynamoDb] [main] com.credai.dynamoDb.config.S3Config      : Initializing Amazon DynamoDB 
+2024-12-26T17:20:14.811+05:30 DEBUG 32476 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-12-26T17:20:14.893+05:30 DEBUG 32476 --- [dynamoDb] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-26T17:20:14.935+05:30 DEBUG 32476 --- [dynamoDb] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-26T17:20:14.986+05:30 DEBUG 32476 --- [dynamoDb] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-26T17:20:15.094+05:30  INFO 32476 --- [dynamoDb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-26T17:20:15.104+05:30  INFO 32476 --- [dynamoDb] [main] c.credai.dynamoDb.DynamoDbApplication    : Started DynamoDbApplication in 3.046 seconds (process running for 3.91)
+2024-12-26T17:21:20.498+05:30  INFO 32476 --- [dynamoDb] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-26T17:21:20.498+05:30  INFO 32476 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-26T17:21:20.498+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-26T17:21:20.498+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-26T17:21:20.498+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-26T17:21:20.498+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@605af2ab
+2024-12-26T17:21:20.505+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4245be5b
+2024-12-26T17:21:20.505+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-26T17:21:20.505+05:30  INFO 32476 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-12-26T17:21:20.522+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/customer/create", parameters={}
+2024-12-26T17:21:20.554+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#createCustomer(Customer)
+2024-12-26T17:21:20.609+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Customer(custId=null, firstName=John, lastName=Williams, dob=11/10/2003, phone=9867543015, email=joh (truncated)...]
+2024-12-26T17:21:20.745+05:30  INFO 32476 --- [dynamoDb] [http-nio-8080-exec-3] c.c.d.controller.CustomerController      : Received request to create customer: Customer(custId=null, firstName=John, lastName=Williams, dob=11/10/2003, phone=9867543015, email=john@gmail.com)
+2024-12-26T17:21:20.745+05:30  INFO 32476 --- [dynamoDb] [http-nio-8080-exec-3] c.c.dynamoDb.service.CustomerService     : Attempting to create customer with custId: null
+2024-12-26T17:21:21.834+05:30  INFO 32476 --- [dynamoDb] [http-nio-8080-exec-3] c.c.dynamoDb.service.CustomerService     : Customer created successfully with ID: 425b10d6-3da4-4ca0-b820-3b21e3d3cc53
+2024-12-26T17:21:21.834+05:30  INFO 32476 --- [dynamoDb] [http-nio-8080-exec-3] c.c.d.controller.CustomerController      : Customer created successfully: 425b10d6-3da4-4ca0-b820-3b21e3d3cc53
+2024-12-26T17:21:21.858+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T17:21:21.858+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Customer created successfully"]
+2024-12-26T17:21:21.874+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T17:23:34.974+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/customer/upload", parameters={}
+2024-12-26T17:23:34.974+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#saveToS3(Map)
+2024-12-26T17:23:34.982+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{custId=425b10d6-3da4-4ca0-b820-3b21e3d3cc53}]
+2024-12-26T17:23:34.982+05:30  INFO 32476 --- [dynamoDb] [http-nio-8080-exec-6] c.c.d.controller.CustomerController      : Received request to save customer data to S3 for custId: 425b10d6-3da4-4ca0-b820-3b21e3d3cc53
+2024-12-26T17:23:34.982+05:30  INFO 32476 --- [dynamoDb] [http-nio-8080-exec-6] com.credai.dynamoDb.service.S3Service    : Saving customer with custId: 425b10d6-3da4-4ca0-b820-3b21e3d3cc53
+2024-12-26T17:23:35.931+05:30  WARN 32476 --- [dynamoDb] [http-nio-8080-exec-6] com.amazonaws.util.Base64                : JAXB is unavailable. Will fallback to SDK implementation which may be less performant.If you are using Java 9+, you will need to include javax.xml.bind:jaxb-api as a dependency.
+2024-12-26T17:23:35.931+05:30  INFO 32476 --- [dynamoDb] [http-nio-8080-exec-6] com.credai.dynamoDb.service.S3Service    : Successfully uploaded customer data to S3Bucket at: customer/customer_26e0e5ea6b00026820cb7cb85cacdd421b448dacebad252a1020cd5242a793bf.json
+2024-12-26T17:23:35.931+05:30  INFO 32476 --- [dynamoDb] [http-nio-8080-exec-6] c.c.d.controller.CustomerController      : File successfully saved to S3 for custId: 425b10d6-3da4-4ca0-b820-3b21e3d3cc53
+2024-12-26T17:23:35.931+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T17:23:35.931+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["File saved to S3 Successfully"]
+2024-12-26T17:23:35.939+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-26T17:25:38.524+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/customer/upload", parameters={}
+2024-12-26T17:25:38.526+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#saveToS3(Map)
+2024-12-26T17:25:38.526+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{custId=425b10d6-3da4-4ca0-b820-3b21e3d3cc5}]
+2024-12-26T17:25:38.526+05:30  INFO 32476 --- [dynamoDb] [http-nio-8080-exec-10] c.c.d.controller.CustomerController      : Received request to save customer data to S3 for custId: 425b10d6-3da4-4ca0-b820-3b21e3d3cc5
+2024-12-26T17:25:38.526+05:30  INFO 32476 --- [dynamoDb] [http-nio-8080-exec-10] com.credai.dynamoDb.service.S3Service    : Saving customer with custId: 425b10d6-3da4-4ca0-b820-3b21e3d3cc5
+2024-12-26T17:25:39.010+05:30  WARN 32476 --- [dynamoDb] [http-nio-8080-exec-10] com.credai.dynamoDb.service.S3Service    : Customer with custId: 425b10d6-3da4-4ca0-b820-3b21e3d3cc5 not found in the DynamoDB. Upload to S3Bucket failed
+2024-12-26T17:25:39.017+05:30 ERROR 32476 --- [dynamoDb] [http-nio-8080-exec-10] c.c.d.controller.CustomerController      : Error saving file to S3: Customer with custId: 425b10d6-3da4-4ca0-b820-3b21e3d3cc5 not found in DynamoDB.Upload to s3bucket failed
+
+java.lang.RuntimeException: Customer with custId: 425b10d6-3da4-4ca0-b820-3b21e3d3cc5 not found in DynamoDB.Upload to s3bucket failed
+	at com.credai.dynamoDb.service.S3Service.saveCustomerToS3(S3Service.java:67) ~[classes/:na]
+	at com.credai.dynamoDb.controller.CustomerController.saveToS3(CustomerController.java:61) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-12-26T17:25:39.026+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T17:25:39.026+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Error saving file to S3: Customer with custId: 425b10d6-3da4-4ca0-b820-3b21e3d3cc5 not found in Dyna (truncated)..."]
+2024-12-26T17:25:39.029+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-12-26T17:26:07.837+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/customer/upload", parameters={}
+2024-12-26T17:26:07.837+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#saveToS3(Map)
+2024-12-26T17:26:07.845+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{custId=425b10d6-3da4-4ca0-b820-3b21e3d3cc53}]
+2024-12-26T17:26:07.845+05:30  INFO 32476 --- [dynamoDb] [http-nio-8080-exec-8] c.c.d.controller.CustomerController      : Received request to save customer data to S3 for custId: 425b10d6-3da4-4ca0-b820-3b21e3d3cc53
+2024-12-26T17:26:07.845+05:30  INFO 32476 --- [dynamoDb] [http-nio-8080-exec-8] com.credai.dynamoDb.service.S3Service    : Saving customer with custId: 425b10d6-3da4-4ca0-b820-3b21e3d3cc53
+2024-12-26T17:26:08.402+05:30  INFO 32476 --- [dynamoDb] [http-nio-8080-exec-8] com.credai.dynamoDb.service.S3Service    : Customer data with custId: 425b10d6-3da4-4ca0-b820-3b21e3d3cc53 already exists in S3. Skipping upload
+2024-12-26T17:26:08.402+05:30 ERROR 32476 --- [dynamoDb] [http-nio-8080-exec-8] c.c.d.controller.CustomerController      : Error saving file to S3: Customer data with custId: 425b10d6-3da4-4ca0-b820-3b21e3d3cc53 already exists in S3Bucket. Skipping upload
+
+java.lang.RuntimeException: Customer data with custId: 425b10d6-3da4-4ca0-b820-3b21e3d3cc53 already exists in S3Bucket. Skipping upload
+	at com.credai.dynamoDb.service.S3Service.saveCustomerToS3(S3Service.java:78) ~[classes/:na]
+	at com.credai.dynamoDb.controller.CustomerController.saveToS3(CustomerController.java:61) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.1.jar:6.2.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.34.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.1.jar:6.2.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-12-26T17:26:08.409+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T17:26:08.409+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Error saving file to S3: Customer data with custId: 425b10d6-3da4-4ca0-b820-3b21e3d3cc53 already exi (truncated)..."]
+2024-12-26T17:26:08.411+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2024-12-26T17:26:41.648+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/customer/create", parameters={}
+2024-12-26T17:26:41.648+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.credai.dynamoDb.controller.CustomerController#createCustomer(Customer)
+2024-12-26T17:26:41.656+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Customer(custId=null, firstName=John, lastName=, dob=11/10/2003, phone=9867543015, email=john@gmail. (truncated)...]
+2024-12-26T17:26:41.704+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.credai.dynamoDb.Exception.GlobalExceptionHandler#handleValidationExceptions(MethodArgumentNotValidException)
+2024-12-26T17:26:41.704+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-12-26T17:26:41.704+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["lastName: LastName cannot be blank"]
+2024-12-26T17:26:41.704+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.String> com.credai.dynamoDb.controller.CustomerController.createCustomer(com.credai.dynamoDb.entity.Customer): [Field error in object 'customer' on field 'lastName': rejected value []; codes [NotBlank.customer.lastName,NotBlank.lastName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [customer.lastName,lastName]; arguments []; default message [lastName]]; default message [LastName cannot be blank]] ]
+2024-12-26T17:26:41.712+05:30 DEBUG 32476 --- [dynamoDb] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2024-12-26T17:38:18.073+05:30  INFO 32476 --- [dynamoDb] [RMI TCP Connection(20)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-12-26T17:38:18.073+05:30  INFO 32476 --- [dynamoDb] [RMI TCP Connection(20)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-26T17:38:18.089+05:30  INFO 32476 --- [dynamoDb] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
